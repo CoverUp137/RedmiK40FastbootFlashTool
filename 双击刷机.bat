@@ -1,6 +1,6 @@
 @echo off
 cd %~dp0
-set /p CHOICE=½«Çå³ýÊÖ»úµÄÈ«²¿Êý¾Ý½øÐÐË¢»ú£¬ÊäÈëY»Ø³µÈ·ÈÏ£¡(Y/N)
+set /p CHOICE=å°†æ¸…é™¤æ‰‹æœºçš„å…¨éƒ¨æ•°æ®è¿›è¡Œåˆ·æœºï¼Œè¾“å…¥Yå›žè½¦ç¡®è®¤ï¼(Y/N)
 if /i "%CHOICE%" neq "y" goto END
 
 platform-tools-windows\fastboot %* getvar product 2>&1 | findstr /r /c:"^product: *alioth" || echo Missmatching image and device
@@ -45,7 +45,7 @@ platform-tools-windows\fastboot %* reboot
 
 echo.
 echo.
-echo. Ë¢»úÍê±Ï
+echo. åˆ·æœºå®Œæ¯•
 
 :Finish
 goto Finish
